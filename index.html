@@ -1,184 +1,156 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VITABOX - Comida saludable</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        header {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1em 2em;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .logo {
-            height: 50px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5em;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .hero {
-            position: relative;
-            text-align: center;
-        }
-
-        .hero img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-        }
-
-        .hero-texto {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            background: rgba(0,0,0,0.4);
-            padding: 2em;
-            border-radius: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 1em;
-            padding: 0.75em 1.5em;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        section {
-            padding: 3em 2em;
-            text-align: center;
-        }
-
-        .menu-items {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2em;
-        }
-
-        .menu-items .item {
-            width: 250px;
-            background-color: white;
-            border-radius: 10px;
-            padding: 1em;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .menu-items .item img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        footer {
-            background-color: #eee;
-            text-align: center;
-            padding: 1em;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>VITABOX - Comida Saludable a Domicilio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffdf6;
+      color: #2f3e2e;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f2f6f0;
+    }
+    header img {
+      height: 80px;
+    }
+    nav {
+      background-color: #79a77e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+    .content {
+      padding: 2rem;
+      text-align: center;
+    }
+    .content h2 {
+      color: #3e613e;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .menu-item {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      width: 250px;
+      padding: 1rem;
+      background-color: #f9fbf7;
+    }
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .promo {
+      background-color: #e9f5e6;
+      padding: 2rem;
+      text-align: center;
+    }
+    .promo img {
+      width: 300px;
+      margin-top: 1rem;
+      border-radius: 12px;
+    }
+    .reviews {
+      background-color: #f4f8f1;
+      padding: 2rem;
+      text-align: center;
+    }
+    .reviews h2 {
+      color: #2f5d36;
+      margin-bottom: 1.5rem;
+    }
+    .review {
+      max-width: 600px;
+      margin: 1rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #dce8d3;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <img src="logo.png" alt="Logo VITABOX" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#menu">Menús</a></li>
-                <li><a href="#promos">Promociones</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+  <img src="logo.png" alt="Logo de Vitabox">
+  <h1>VITABOX</h1>
+  <p>Comida saludable, rápida y sabrosa</p>
+</header>
 
-    <section id="inicio" class="hero">
-        <img src="banner.jpg" alt="Banner saludable">
-        <div class="hero-texto">
-            <h1>Comida saludable a tu puerta</h1>
-            <p>¿Sin tiempo para cocinar? Nosotros te lo solucionamos con sabor y salud 🍽️</p>
-            <a href="#menu" class="btn">Haz tu pedido ahora</a>
-        </div>
-    </section>
+<nav>
+  Entrega rápida · Ingredientes de calidad · Cuida tu salud
+</nav>
 
-    <section id="nosotros">
-        <h2>¿Quiénes somos?</h2>
-        <p>En <strong>VITABOX</strong>, creemos que comer bien no tiene por qué ser complicado.  
-        Ofrecemos menús frescos, equilibrados y listos para disfrutar sin culpa.</p>
-        <ul>
-            <li>🌱 Ingredientes de calidad</li>
-            <li>⏱️ Entrega rápida</li>
-            <li>💚 Cuidado por tu salud y el planeta</li>
-        </ul>
-    </section>
+<img class="banner" src="banner.jpg" alt="Banner principal">
 
-    <section id="menu">
-        <h2>Nuestros menús</h2>
-        <div class="menu-items">
-            <div class="item">
-                <img src="bowl.jpg" alt="Bowl proteico">
-                <h3>Bowl Proteico</h3>
-                <p>Pollo, arroz integral, edamame y salsa tahini</p>
-            </div>
-            <div class="item">
-                <img src="ensalada.jpg" alt="Ensalada fresca">
-                <h3>Ensalada Vital</h3>
-                <p>Espinacas, aguacate, garbanzos y vinagreta</p>
-            </div>
-            <div class="item">
-                <img src="desayuno.jpg" alt="Desayuno saludable">
-                <h3>Desayuno Energético</h3>
-                <p>Avena con fruta, semillas y leche vegetal</p>
-            </div>
-        </div>
-    </section>
+<section class="content">
+  <h2>Nuestro Menú Estrella</h2>
+  <div class="menu">
+    <div class="menu-item">
+      <img src="bowl.jpg" alt="Bowl proteico">
+      <h3>Bowl Proteico</h3>
+      <p>Pollo, quinoa, garbanzos y espinacas frescas</p>
+    </div>
+    <div class="menu-item">
+      <img src="ensalada.jpg" alt="Ensalada vital">
+      <h3>Ensalada Vital</h3>
+      <p>Mix verde, aguacate, semillas y aliño de limón</p>
+    </div>
+    <div class="menu-item">
+      <img src="desayuno.jpg" alt="Desayuno energético">
+      <h3>Desayuno Energético</h3>
+      <p>Copos de avena, fruta fresca y yogur natural</p>
+    </div>
+  </div>
+</section>
 
-    <section id="promos">
-        <h2>Promociones</h2>
-        <p>🎉 10% de descuento en tu primer pedido – Usa el código <strong>VITA10</strong></p>
-        <p>🚚 Envío gratis a partir de 25€</p>
-        <p>🎁 Programa de fidelización <strong>VITAFANS</strong></p>
-    </section>
+<section class="promo">
+  <h2>¡Haz tu pedido ahora!</h2>
+  <p>Entra en <strong>vitabox.com</strong> o llámanos al <strong>694445175</strong></p>
+  <p><strong>10% DE DESCUENTO</strong> con el código <code>VITA10</code> en tu primer pedido</p>
+  <img src="promo_vitabox.jpg" alt="Anuncio Promocional Vitabox">
+</section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>🌐 Página web: <a href="https://vitabox.com">www.vitabox.com</a></p>
-        <p>📞 Teléfono: 694 445 175</p>
-        <p>📧 Email: contacto@vitabox.com</p>
-        <p>📸 Instagram: @vitabox_salud</p>
-    </section>
+<section class="reviews">
+  <h2>Opiniones de nuestros clientes</h2>
+  <div class="review">
+    <p>“¡Increíble! Comida rica, saludable y llega rapidísimo. Me salvó más de una vez.”</p>
+    <strong>– Marta G.</strong>
+  </div>
+  <div class="review">
+    <p>“Nunca pensé que algo tan sano pudiera saber tan bien. 10/10.”</p>
+    <strong>– Alex R.</strong>
+  </div>
+  <div class="review">
+    <p>“Ideal para el trabajo. Lo pido todas las semanas y siempre está fresco.”</p>
+    <strong>– Laura T.</strong>
+  </div>
+</section>
 
-    <footer>
-        <p>© 2025 VITABOX. Todos los derechos reservados.</p>
-    </footer>
+<footer>
+  © 2025 Vitabox - Todos los derechos reservados
+</footer>
 
 </body>
 </html>
